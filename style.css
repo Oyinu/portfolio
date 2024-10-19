@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141619;
+}
+header{
+    background-color: #141619;
+    max-height: 100%;
+    width: 100%;
+    padding-left: .7rem;
+    padding-top:  1rem;
+    display: flex;
+    justify-content: center;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li a{
+    padding: 0 2rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    font-family: Fredoka ;
+}
+header h1{
+    color: #2C2E3A;
+    font-family: Fredoka;
+    font-size: 1.6rem ;
+}
+header {
+    transition: all 0.3s ease;
+}
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+.Home{
+    background:#141619;
+    padding: 20px 40px 0px 40px;
+    margin: 0px auto;
+
+   
+}
+
+#Home-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+}
+.Home-profile{
+    width: 90%;
+    
+    clip-path: circle(40%);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.header-profile{
+    width: 70px;
+    clip-path: circle(40%);
+
+
+}
+.Home-profile.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+#header-profile{
+    padding-left: 5rem;
+}
+.Home-section{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem;
+}
+.Home-section p{
+    font-size: 1.7rem;
+    color: white;
+    font-family: Fredoka;
+
+}
+#Home-text{
+    font-size: 2rem;
+    font-family: Fredoka;
+    color: white;
+}
+#Home--text{
+    font-size: 2rem;
+    color: white;
+    font-family: Fredoka;
+}
+#Home-small-text{
+    font-family: Fredoka;
+    
+}
+
+.active{
+    color: #4A90E2;
+}
+#name{
+    color: white
+
+}
+.name{
+    font-size: 1.7rem
+}
+.hero-btns{
+    display: inline-flexbox;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+ 
+    
+}
+.hero-btns a{
+    padding: 1rem 2rem;
+    color: white;
+   
+}
+.hero-btn, .hero-btnx{
+    padding:1rem;
+    border-radius: 45% 55% 70% 30% / 30% 64% 36% 70% ;
+    background: transparent;
+    border: 2px solid white;
+    
+}
+.btns{
+    color: white;
+    font-family: Fredoka;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+.btns button{
+    color: white;
+}
+
+#About{
+    background-color: #141619;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+#whole-body-container{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+
+
+}
+
+.about-heading{
+    font-size: 4rem;
+    font-family: "Germania One", system-ui;
+    color: #4A90E2;
+    display: flex;
+    align-items: center;
+    align-content:center ;
+    justify-content: center;
+}
+.story{
+    font-size: 1rem;
+    color: white;
+    font-family: Fredoka;
+    line-height: 30px;
+    padding:2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.story.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+#Services{
+    background-color: #141619;
+}
+.services-header{
+    font-size: 4rem;
+    font-family: "Germania One", system-ui;
+    color: #4A90E2;
+    display: flex;
+    align-items: center;
+    align-content:center ;
+    justify-content: center;
+    
+}
+
+.services-box{
+    background-color: #2C2E3A;
+
+}
+.header-services{
+    font-size: 2rem;
+    font-family: "Cabin", sans-serif;
+    color: #4A90E2;
+    display: flex;
+    align-items: center;
+    align-content:center ;
+    justify-content: center;
+    
+}
+.service-heading P{
+    font-size: 1rem;
+    color: white;
+    font-family: Fredoka;
+    line-height: 30px;
+    padding:2rem;
+    font-weight: lighter;
+   
+}
+
+.service-animation, .service-animation1, .service-animation2, .service-animation3{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.service-animation.visible{
+opacity: 1;
+transform: translateY(0);
+}
+.service-animation1.visible{
+    opacity: 1;
+    transform: translateY(0);
+    }
+    .service-animation2.visible{
+        opacity: 1;
+        transform: translateY(0);
+        }
+        .service-animation3.visible{
+            opacity: 1;
+            transform: translateY(0);
+            }
+
+
+
+#services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px; /* Space between grid items */
+    padding: 16px; /* Optional padding around the container */
+    margin-top: 4rem;
+}
+
+.services-box {
+    background-color: #2C2E3A; /* Example background color */
+    color: white;
+    padding: 15px;
+    border-radius: 8px; /* Optional styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    margin-bottom: 4rem;
+}
+
+.services-header {
+    text-align: center; /* Center the header */
+    margin-bottom: 20px; /* Spacing below the header */
+}
+#Contact{
+    background-color: #141619;
+}
+.contact-header{
+    font-size: 4rem;
+    font-family: "Germania One", system-ui;
+    color: #4A90E2;
+    display: flex;
+    align-items: center;
+    align-content:center ;
+    justify-content: center;
+    
+}
+.footers p{
+    font-size: 1rem;
+    color: white;
+    font-family: Fredoka;
+    line-height: 30px;
+    padding:2rem;
+    font-weight: lighter;
+}
+.footer-body{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.links{
+
+    width: 500px;
+}
+i{
+    text-decoration: none;
+    font-size: 2rem;
+    color:white;
+    cursor: pointer;
+    list-style: none;
+    transition: .5s ease-in-out;
+}
+i:hover{
+    color: #4A90E2;
+    transition: .5s ease-in-out;
+}
+.footers p{
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+}
+
+
+.footers p.visible{
+opacity: 1;
+transform: translateY(0);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    nav ul li a{
+        padding: 0 .7rem;
+        font-size: 16px;
+ 
+    }
+    .Home-section p{
+        font-size: 1rem;
+        color: white;
+        font-family: Fredoka;
+    }
+    #Home-text{
+        font-size: 1rem;
+        font-family: Fredoka;
+        color: white;
+    }
+    #Home--text{
+        font-size: 1rem;
+        color: white;
+        font-family: Fredoka;
+    }
+    .name{
+        font-size: 1rem;
+    }
+    .hero-btns{
+        display: inline-flexbox;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem .5rem;
+     
+        
+    }
+    .hero-btns a{
+        padding: .5rem 1rem;
+        color: white;
+       
+    }
+    .hero-btn, .hero-btnx{
+        padding:1rem;
+        border-radius: 45% 55% 70% 30% / 30% 64% 36% 70% ;
+        background: transparent;
+        border: 2px solid white;
+        
+    }
+    .btns{
+        color: white;
+        font-family: Fredoka;
+        font-size: .7rem;
+        font-weight: bold;
+    
+    }
+    .Home-section{
+        padding: 1rem;
+        
+    }
+    #Home-section{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem;
+    }
+    .hero-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem .5rem; 
+    }
+    .story{
+        font-size: .7rem;
+        line-height: 30px;
+        padding:2rem;
+        font-weight: normal;
+    }
+    .service-animation, .service-animation1, .service-animation2, .service-animation3{
+        font-size: 16px;
+        
+    }
+    #services-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 16px; /* Space between grid items */
+        padding: 13px; /* Optional padding around the container */
+        margin-top: 4rem;
+    }
+    .footers p{
+        font-size: .7rem;
+
+        line-height: 20px;
+    
+    }
+    .footer-body{
+        margin-top: 2rem;
+        padding: .5rem 1rem;
+       
+    }
+  }
