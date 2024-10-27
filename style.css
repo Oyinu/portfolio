@@ -76,8 +76,9 @@ header {
 .header-profile{
     width: 70px;
     clip-path: circle(40%);
-
-
+}
+.logo{
+    display: none;
 }
 .Home-profile.visible{
     opacity: 1;
@@ -138,8 +139,8 @@ header {
    
 }
 .hero-btn, .hero-btnx{
-    padding:1rem;
-    border-radius: 45% 55% 70% 30% / 30% 64% 36% 70% ;
+    padding:.8rem;
+    border-radius:15px ;
     background: transparent;
     border: 2px solid white;
     
@@ -335,7 +336,7 @@ i:hover{
 .footers p{
     opacity: 0;
     transform: translateY(-50px);
-    transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+    transition: opacity 2.3s ease-out; transform: 2.3s ease-out;
 }
 
 
@@ -367,6 +368,21 @@ transform: translateY(0);
         color: white;
         font-family: Fredoka;
     }
+    .menu{
+        display: none;
+    }
+    .header-profile{
+        display: none;
+        align-items: center;
+    }
+
+    
+   .logo{
+    display: block;
+        font-size: 2rem !important;
+        color: white;
+        font-family: fredoka;
+    }
     .name{
         font-size: 1rem;
     }
@@ -383,12 +399,20 @@ transform: translateY(0);
         color: white;
        
     }
-    .hero-btn, .hero-btnx{
-        padding:1rem;
-        border-radius: 45% 55% 70% 30% / 30% 64% 36% 70% ;
+    .hero-btn{
+        padding:.8rem;
+        border-radius:15px ;
+        width: 100px;
         background: transparent;
         border: 2px solid white;
         
+    }
+   .hero-btnx{
+        padding:.8rem;
+        border-radius:15px ;
+        width: 150px;
+        background: transparent;
+        border: 2px solid white;
     }
     .btns{
         color: white;
@@ -398,7 +422,7 @@ transform: translateY(0);
     
     }
     .Home-section{
-        padding: 1rem;
+        padding: .3rem;
         
     }
     #Home-section{
