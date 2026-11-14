@@ -1,448 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
-    <title>Acelord's Portfolio</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./style/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acelord | Full-Stack Web3 Developer &amp; Community Manager</title>
+  <meta name="description" content="Acelord builds dApps and smart contracts, and runs communities and social media for crypto projects.">
+  <meta property="og:title" content="Acelord | Web3 Developer &amp; Community Manager">
+  <meta property="og:description" content="Dev by code. CM by chaos. Let's build.">
+  <meta property="og:image" content="https://acelord-dev.vercel.app/assets/profile.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Geist:wght@300..700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="./style/style.css">
 </head>
-
 <body>
-    <header id="header" class="">
-        <nav class="navbar container-fluid navbar-expand-lg px-4 sticky-top" id="navbarNav">
-            <a class="navbar-brand" href="#">Acelord's <br> <span>Portfolio</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="skip" href="#about">Skip to content</a>
 
-            </button>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home">Acelord<span>.dev</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><i class="bx bx-menu"></i></button>
+      <ul class="menu" id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="menu-cta">Hire me</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <div class="container-fluid navbar-collapse d-none d-lg-block " id="navbarSupportedContent">
-                <ul class="navbar-nav ">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-    </header>
-
-    <section class="Home" id="Home">
-        <div id="Home-section">
-            <div class="Home-section">
-                <div class="home-text">
-                    <h1>
-                        I am <span>Acelord</span>
-                    </h1>
-                    <h1 id="Home-text">
-                        A Full-Stack Dev, <->
-                            CM/SMM.
-                    </h1>
-                    <p id="Home-small-text">
-                        Enhancing projects visibility and fostering meaningful connections within the crypto space.
-                        <br>
-                        <span> ` Dev by code; CM by chaos.` </span>
-                    </p>
-                    <div class="links">
-                        <ul class="socials">
-                            <li><a href="https://x.com/Ace__lord" target="_blank"><i class='bx bxl-twitter'></i></a>
-                            </li>
-                            <li><a href="https://github.com/Oyinu" target="_blank"><i class='bx bxl-github'></i></a>
-                            </li>
-                            <li><a href="https://t.me/Ace6848" target="_blank"><i class='bx bxl-telegram'></i></a></li>
-                            <li><a href="mailto:iamacelord@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-
-
-            </div>
-
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap">
+        <h1>Full-stack dev. <br>Community builder.</h1>
+        <p class="lead">I build dApps and smart contracts, then run the communities and social channels that give them users. Dev by code; CM by chaos.</p>
+        <div class="actions">
+          <a class="btn primary" href="#work">See my work</a>
+          <a class="btn" href="https://t.me/Ace6848" target="_blank" rel="noopener noreferrer">Message on Telegram</a>
         </div>
-
-
-        </div>
-
+        <ul class="stats">
+          <li><strong>5+</strong><span>years in Web3</span></li>
+          <li><strong>50K+</strong><span>community members managed</span></li>
+          <li><strong>20+</strong><span>projects delivered</span></li>
+        </ul>
+      </div>
     </section>
 
-    <section id="About">
-        <div id="whole-body-container">
-
-            <div class="about-container">
-                <p class="about-section-begin"><span><strong>.</strong> </span>All You Need To Know</p>
-                <p class="story">
-                    I'm<span style="font-weight: bolder; color:#4a90e2 ;"> Acelord</span>, I'm Acelord — a Full-Stack
-                    Developer, Onchain Builder, and Community Strategist operating at the intersection of code, culture,
-                    and crypto.
-                    On the <span style="font-weight: bolder; color:#4a90e2 ; font-weight: 500;">dev</span> side, I
-                    architect and ship scalable web applications and blockchain solutions — from smart contracts and
-                    dApps to clean, conversion-focused frontends built with <span
-                        style="padding: .25rem .25rem; border: 1px solid #4a90e2; border-radius: 4px;">React, Angular,
-                        and modern JS stacks.</span> I don't just write code; I engineer outcomes.
-                    In the Web3 <span style="font-weight: bolder; color:#4a90e2 ; font-weight: 500;">marketing</span>
-                    space, I don't follow playbooks — I write them. I've built and executed go-to-market strategies for
-                    crypto projects, grown communities from zero to thousands, and turned cold audiences into loyal
-                    holders through sharp content, strategic influencer plays, and data-driven campaigns.
-                    As a <span style="font-weight: bolder; color:#4a90e2 ; font-weight: 500;">Community Manager</span>,
-                    I understand that the strongest moat in crypto isn't the tech — it's the people. I build communities
-                    that show up, speak up, and stick around.
-                    Whether you need a protocol built, a brand launched, or a community that actually moves — I'm the
-                    one call that covers all three. <br>
-                    <span style="color: #4a90e2; font-weight: 500;">` Dev by code. CM by chaos. Let's build.`</span>
-                </p>
-
-            </div>
-            <div class="Home-picture">
-                <img src="./assets/profile.jpg" alt="" class="Home-profile">
-            </div>
+    <section id="about">
+      <div class="wrap about">
+        <img src="./assets/profile.jpg" alt="Portrait of Acelord" width="320" height="320" class="portrait" loading="lazy">
+        <div class="prose">
+          <h2>I'm Acelord, a developer who understands communities.</h2>
+          <p>I work where code, culture and crypto meet. On the dev side, I ship scalable web apps and blockchain products: smart contracts, dApps and clean frontends in React, Angular and modern JavaScript.</p>
+          <p>On the marketing side, I've planned and run go-to-market campaigns, grown communities from zero to thousands, and turned cold audiences into loyal holders with sharp content and data-driven campaigns.</p>
+          <p>The strongest moat in crypto isn't the tech, it's the people. Whether you need a protocol built, a brand launched or a community that shows up, one call covers all three.</p>
         </div>
-
+      </div>
     </section>
 
-    <section id="Services">
-        <div id="services-base">
-            <p class="about-section-begin"><span><strong>.</strong> </span>services i render</p><br>
-            <div class="row services-row">
-                <div class="col services-box" style="background-color: hsl(0, 0%, 8%)">
-                    <p>
-                    <h1 class="header-services">OnChain Developer</h1>
-                    <h2 class="service-heading">
-                        <p class="service-animation">
-                            I build on both sides of the stack, and both sides of the chain.
-                            On the web, I ship clean, scalable apps with React, Angular, and solid backend architecture.
-                            On-chain, I develop smart contracts, build dApps, and integrate Web3 infrastructure into
-                            experiences that actually work. I don't just connect a wallet to a frontend — I build
-                            systems where the chain is the backend.
-                           <span style="color: #4a90e2; font-weight: 500;"> Full stack. Both chains. No handoffs.</span>
-                        </p>
-                    </h2>
-                    </p>
-                </div>
-                <div class="col services-box" style="background-color: hsl(0, 0%, 8%);">
-                    <p>
-                    <h1 class="header-services">Community Management</h1>
-                    <h2 class="service-heading">
-                        <p class="service-animation1">
-                            Communities don't grow — they're cultivated.
-                            I build spaces where people genuinely show up and care about what's being built. From
-                            onboarding flows and moderation systems to AMAs, ambassador programs, and crisis comms — I
-                            handle it all. In crypto, I know the difference between hype and loyalty. I build for the
-                            latter.
-                            <span style="color: #4a90e2; font-weight: 500;">Your community is your product. I make sure it doesn't break.</span>
-                        </p>
-                    </h2>
-                    </p>
-                </div>
-                <div class="col services-box" style="background-color: hsl(0, 0%, 8%);">
-                    <p>
-                    <h1 class="header-services">Social Media Management</h1>
-                    <h2 class="service-heading">
-                        <p class="service-animation2">
-                            Attention is the scarcest resource in crypto. I know how to earn it.
-                            I run social presences across X, Telegram, Discord, and LinkedIn — sharp content, consistent
-                            voice, and strategy built around what actually drives engagement in Web3. I track what
-                            works, cut what doesn't, and handle KOL outreach that moves the needle — not just the
-                            follower count.
-                           <span style="color: #4a90e2; font-weight: 500;"> Less posting. More presence. Real results.</span>
-                        </p>
-                    </h2>
-                    </p>
-                </div>
-            </div>
+    <section id="services">
+      <div class="wrap">
+        <h2>What I do for projects</h2>
+        <div class="cards three">
+          <article class="card reveal">
+            <i class="bx bx-code-alt"></i>
+            <h3>On-chain development</h3>
+            <p>Smart contracts, dApps and Web3 integrations, with React, Angular and solid backend architecture. The chain is the backend, with no handoffs.</p>
+          </article>
+          <article class="card reveal">
+            <i class="bx bx-group"></i>
+            <h3>Community management</h3>
+            <p>Onboarding flows, moderation, AMAs, ambassador programs and crisis comms. I build for loyalty, not just hype.</p>
+          </article>
+          <article class="card reveal">
+            <i class="bx bx-broadcast"></i>
+            <h3>Social media management</h3>
+            <p>Content and strategy for X, Telegram, Discord and LinkedIn, plus KOL outreach that moves numbers beyond follower count.</p>
+          </article>
         </div>
-
+      </div>
     </section>
-    <section class="container-fluid" id="portfolio">
-        <div class="row">
-            <div class="portfolio-section col-12 px-4 py-5">
-                <p class="about-section-begin"><span><strong>.</strong> </span>My Past Work</p>
-                <p class="portfolio-section-text" style="color: white; font-family: fredoka; font-size: 1rem; ">Here are some of my projects in Development, Community Growth/Management and Social Media Management</p>
 
-                <div class="portfolio-grid">
-                    <!-- Portfolio Item 1 -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="./assets/pipe  network.jpg" alt="Project 1">
-                        </div>
-                        <div class="portfolio-content">
-
-                            <h3>ROLE: Community Manager</h3>
-                            <h4>PROJECT:Pipe Network</h4>
-                            <p>Managed and grew the Pipe Network community across Discord — moderating discussions, onboarding new members, and keeping engagement alive through consistent communication. Served as the bridge between the core team and the community, translating technical updates into clear, digestible announcements that kept members informed and excited throughout the project's growth.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">DeFi</span>
-                                <span class="tag">Community Lead</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Portfolio Item 2 -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="./assets/pecunity.jpg" alt="Project 2">
-                        </div>
-                        <div class="portfolio-content">
-                            <h3>ROLE: Social Media Management</h3>
-                            <h4>PROJECT: Pecunity(formerly Octodefi)</h4>
-                            <p>Managed Pecunity's social media presence across X and Telegram — crafting content, driving engagement, and growing the project's audience within the Web3 space. Maintained a consistent brand voice, coordinated announcements, and executed campaigns that kept the community active and the project visible.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">DeFi</span>
-                                 <span class="tag">Yield</span>
-                                <span class="tag">Social Media Management</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Portfolio Item 3 -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                           
-                            <a href="https://lucrative-token.netlify.app/" target="_blank"> <img src="./assets/lucrative.jpg" alt="Project 3"> </a>
-                        </div>
-                        <div class="portfolio-content">
-                            <h3>ROLE: Web Developer</h3>
-                            <h4>PROJECT:Lucrative</h4>
-                            <p>
-                               Designed and developed the official landing page for Lucrative ($LUCR), a token built on the Promethean Blockchain (Solana). The site covers the full project overview — tokenomics, roadmap, token information, and community links — with a clean, crypto-native aesthetic. Built for clarity and conversion, making it easy for visitors to understand the project and jump in.
-                            </p>
-                            <div class="portfolio-tags">
-                                <span class="tag">Memecoin</span>
-                                <span class="tag">Frontend Development</span>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+    <section id="work">
+      <div class="wrap">
+        <h2>Selected work</h2>
+        <div class="cards three">
+          <article class="card project reveal">
+            <img src="./assets/pipe-network.jpg" alt="Pipe Network project artwork" loading="lazy">
+            <div class="body">
+              <p class="role">Community Manager</p>
+              <h3>Pipe Network</h3>
+              <p>Grew and moderated the Discord community, onboarded new members, and turned technical updates into clear announcements for the core team.</p>
+              <ul class="tags"><li>DeFi</li><li>Discord</li></ul>
+              <!-- Add a result here, e.g. "Grew Discord from X to Y members" -->
+              <!-- <a class="more" href="LINK">View project</a> -->
             </div>
+          </article>
+          <article class="card project reveal">
+            <img src="./assets/pecunity.jpg" alt="Pecunity project artwork" loading="lazy">
+            <div class="body">
+              <p class="role">Social Media Manager</p>
+              <h3>Pecunity (formerly Octodefi)</h3>
+              <p>Ran content, announcements and campaigns on X and Telegram with a consistent brand voice, keeping the community active and the project visible.</p>
+              <ul class="tags"><li>DeFi</li><li>Yield</li><li>X &amp; Telegram</li></ul>
+              <!-- Add a result here, e.g. "Grew X following by Y%" -->
+            </div>
+          </article>
+          <article class="card project reveal">
+            <a href="https://lucrative-token.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open the Lucrative website"><img src="./assets/lucrative.jpg" alt="Lucrative website preview" loading="lazy"></a>
+            <div class="body">
+              <p class="role">Web Developer</p>
+              <h3>Lucrative ($LUCR)</h3>
+              <p>Designed and built the official landing page for a Solana token, covering tokenomics, roadmap and community links in a clear, conversion-focused layout.</p>
+              <ul class="tags"><li>Memecoin</li><li>Frontend</li></ul>
+              <a class="more" href="https://lucrative-token.netlify.app/" target="_blank" rel="noopener noreferrer">Visit live site</a>
+            </div>
+          </article>
         </div>
+      </div>
     </section>
-  <section class="container-fluid" id="skills">
-        <div class="row">
-            <!-- Skills Section -->
-            <div class="skills-section col-md-6 px-4 py-5">
-                <p class="about-section-begin"><span><strong>.</strong> </span>My Expertise</p>
-                <h2>Skills & <span>Tools</span></h2>
-<!--Dev tools-->
- <div class="skill-category">
-                    <h3>Dev Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
 
-                            <div class="skill-info">
-                                <h4>Languages:</h4>
-                                <ul>
-                                    <li>- Rust</li>
-                                    <li>- Solidity</li>   
-                                    <li>- JavaScript</li>
-                                    <li>- TypeScript</li>
-                                    <li>- ReactJS</li>
-                                </ul>
-                            </div>
-                        </div>
-                              <div class="skill-item">
+    <section id="skills">
+      <div class="wrap">
+        <h2>Skills and tools</h2>
+        <div class="skill-groups">
+          <div><h3>Languages</h3><ul class="pills"><li>Rust</li><li>Solidity</li><li>JavaScript</li><li>TypeScript</li><li>ReactJS</li></ul></div>
+          <div><h3>Libraries and tools</h3><ul class="pills"><li>Ethers.js</li><li>Web3.js</li><li>Anchor</li><li>Docker</li></ul></div>
+          <div><h3>Wallet integration</h3><ul class="pills"><li>MetaMask</li><li>Phantom</li><li>WalletConnect</li></ul></div>
+          <div><h3>Community platforms</h3><ul class="pills"><li>Discord</li><li>X</li><li>Telegram</li><li>Collab.Land</li><li>Zealy</li><li>Galxe</li></ul></div>
+          <div><h3>How I work</h3><ul class="pills"><li>Strategic thinking</li><li>Problem solving</li><li>Relationship building</li><li>Adaptability</li><li>Fluent English, across time zones</li></ul></div>
+        </div>
+      </div>
+    </section>
 
-                            <div class="skill-info">
-                                <h4>Libraries & Tools:</h4>
-                                <ul>
-                                    <li>- Ether.js</li>
-                                    <li>- Web3.js</li>   
-                                    <li>- Anchor</li>
-                                    <li>- Docker</li>
-                                </ul>
-                            </div>
-                        </div>
+    <section id="contact">
+      <div class="wrap contact">
+        <h2>Have a project in mind?</h2>
+        <p class="lead">Tell me what you're building. I usually reply within a day.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://t.me/Ace6848" target="_blank" rel="noopener noreferrer">Message on Telegram</a>
+          <a class="btn" href="mailto:iamacelord@gmail.com">iamacelord@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-                            <div class="skill-item">
-
-                            <div class="skill-info">
-                                <h4>Wallet Integration:</h4>
-                                <ul>
-                                    <li>- MetaMask</li>
-                                    <li>- Phantom</li>   
-                                    <li>- WalletConnect</li>
-                                
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-    <div class="row tools-section">
-            <!-- Tools -->
-                <div class="col skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-
-                            <div class="skill-info">
-                                <h4>Discord</h4>
-                                <p>Server setup and management</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-
-                            <div class="skill-info">
-                                <h4>X (Twitter)</h4>
-                                <p>Social media strategy</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-
-                            <div class="skill-info">
-                                <h4>Telegram</h4>
-                                <p>Community engagement</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-
-                            <div class="skill-info">
-                                <h4>Collab.land</h4>
-                                <p>Token gating & verification</p>
-                            </div>
-                        </div>
-
-                        <div class="skill-item">
-
-                            <div class="skill-info">
-                                <h4>Zealy / Galxe</h4>
-                                <p>Quest & campaign management</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Soft Skills -->
-                <div class="col skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="soft-skills-list">
-                        <div class="soft-skill-item">
-                            <div class="skill-bullet"></div>
-                            <p>Strategic Thinking</p>
-                        </div>
-                        <div class="soft-skill-item">
-                            <div class="skill-bullet"></div>
-                            <p>Problem Solving</p>
-                        </div>
-                        <div class="soft-skill-item">
-                            <div class="skill-bullet"></div>
-                            <p>Relationship Building</p>
-                        </div>
-                        <div class="soft-skill-item">
-                            <div class="skill-bullet"></div>
-                            <p>Adaptability</p>
-                        </div>
-                    </div>
-                </div>
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <p>&copy; <span id="year">2026</span> Acelord. All rights reserved.</p>
+      <ul class="socials">
+        <li><a href="https://x.com/Ace__lord" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="bx bxl-twitter"></i></a></li>
+        <li><a href="https://github.com/Oyinu" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a></li>
+        <li><a href="https://t.me/Ace6848" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bx bxl-telegram"></i></a></li>
+        <li><a href="mailto:iamacelord@gmail.com" aria-label="Email"><i class="bx bxl-gmail"></i></a></li>
+      </ul>
     </div>
-            </div>
+  </footer>
 
-            <!-- Languages Section -->
-            <div class="languages-section col-md-6 px-4 py-5">
-                <p class="about-section-begin"><span><strong>.</strong> </span>Communication</p>
-                <h2 style="color: #4a90e2;">Languages</h2>
-
-                <div class="languages-container">
-                    <div class="language-item">
-                        <div class="language-header">
-                            <h3>English</h3>
-                            <span class="proficiency-badge">Fluent</span>
-                        </div>
-                        <div class="proficiency-bar">
-                            <div class="proficiency-fill" style="width: 100%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Additional Info -->
-                <div class="language-note">
-                    <p>Experienced in communicating with global Web3 communities across multiple time zones and
-                        cultures.</p>
-                </div>
-
-                <!-- Statistics -->
-                <div class="stats-container">
-                    <div class="stat-item">
-                        <h4>5+</h4>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat-item">
-                        <h4>50K+</h4>
-                        <p>Community Members</p>
-                    </div>
-                    <div class="stat-item">
-                        <h4>20+</h4>
-                        <p>Successful Projects</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="Contact">
-        <div id="footer">
-            <h1 class="contact-header">CONTACT ME</h1>
-            <div class="footer-body">
-                <div class="footers">
-                    <p>
-                        Designed and developed with passion by Acelord.<br>
-                        Contact: oyinugodwin@gmail.com; iamacelord@gmail.com | +234 9034921773<br>
-                        Copyright ©️2025 Acelord. All rights reserved.<br>
-                        Thanks for stopping by! If you have a project in mind, let's collaborate and bring it to life!
-
-
-                    </p>
-                </div>
-                <div class="links2">
-                    <ul class="socials2">
-                        <li><a href="https://x.com/Ace__lord" target="_blank"><i class='bx bxl-twitter'></i></a>
-                        </li>
-                        <li><a href="https://github.com/Oyinu" target="_blank"><i class='bx bxl-github'></i></a>
-                        </li>
-                        <li><a href="https://t.me/Ace6848" target="_blank"><i class='bx bxl-telegram'></i></a></li>
-                        <li><a href="mailto:iamacelord@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-    <script src="./script/script.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="./script/bootstrap.min.js"></script>
+  <script src="./script/script.js"></script>
 </body>
-
 </html>
