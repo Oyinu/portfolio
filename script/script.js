@@ -1,66 +1,43 @@
-const links = document.querySelectorAll('.home');
+document.addEventListener('DOMContentLoaded', () => {
+  // Mobile menu
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('.menu');
+  const setMenu = (open) => {
+    menu.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+  };
+  toggle.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
+  menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
 
-links.forEach(home => {
-    home.addEventListener('click', function() {
-        links.forEach(l => l.classList.remove('active'));
-        this.classList.add('active'); 
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Highlight the current section in the nav
+  const links = [...menu.querySelectorAll('a:not(.menu-cta)')];
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      links.forEach((l) => l.classList.toggle('active', l.getAttribute('href') === '#' + entry.target.id));
     });
-});
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  links.forEach((l) => {
+    const section = document.querySelector(l.getAttribute('href'));
+    if (section) sectionObserver.observe(section);
+  });
 
-~
-document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('.list a');
-
-    links.forEach(link => {
-        link.addEventListener('click', function() {
-            links.forEach(l => l.classList.remove('active')); 
-            this.classList.add('active'); 
-        });
+  // Reveal cards once as they scroll into view
+  const items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    items.forEach((el) => el.classList.add('visible'));
+    return;
+  }
+  const revealObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
     });
-
-    // Animation on scroll for header profile
-    const headerProfile = document.querySelector('.Home-profile');
-    const aboutParagraph = document.querySelector('.story');
-    const serviceHeading = document.querySelector('.service-animation')
-    const serviceHeading1 = document.querySelector('.service-animation1')
-    const serviceHeading2 = document.querySelector('.service-animation2')
-    const serviceHeading3 = document.querySelector('.service-animation3')
-    const footers = document.querySelector('.footers p')
-
-    function handleScroll() {
-        const headerPosition = headerProfile.getBoundingClientRect().top;
-        const aboutPosition = aboutParagraph.getBoundingClientRect().top;
-        const servicePosition = serviceHeading.getBoundingClientRect().top;
-        const servicePosition1 = serviceHeading.getBoundingClientRect().top;
-        const servicePosition2 = serviceHeading.getBoundingClientRect().top;
-        const servicePosition3 = serviceHeading.getBoundingClientRect().top;
-        const footersPosition = footers.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.2;
-
-        if (headerPosition < screenPosition) {
-            headerProfile.classList.add('visible');
-        }
-        
-        if (aboutPosition < screenPosition) {
-            aboutParagraph.classList.add('visible');
-        }
-        
-        if (servicePosition < screenPosition) {
-            serviceHeading.classList.add('visible');
-        }
-        if (servicePosition < screenPosition) {
-            serviceHeading1.classList.add('visible');
-        }
-        if (servicePosition < screenPosition) {
-            serviceHeading2.classList.add('visible');
-        }
-        if (servicePosition < screenPosition) {
-            serviceHeading3.classList.add('visible');
-        }
-        if (servicePosition < screenPosition) {
-            footers.classList.add('visible');
-        }
-    }
-
-    document.addEventListener('scroll', handleScroll);
+  }, { threshold: 0.15 });
+  items.forEach((el) => revealObserver.observe(el));
 });
