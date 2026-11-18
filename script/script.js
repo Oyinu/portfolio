@@ -1,3 +1,4 @@
+document.documentElement.classList.add("js");
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu
   const toggle = document.querySelector('.nav-toggle');
